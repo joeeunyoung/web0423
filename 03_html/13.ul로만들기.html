@@ -6,30 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            font-size: 15px;
+        }
 
-        body {font-size: 11px;}
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-        a {text-decoration: none; color: #333;}
-        a:hover {background: rgba(173, 216, 230, 0.548);}
-
-        td {
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        /* notice */
+        .notice {
             width: 400px;
             line-height: 2;
+        }
+        .notice a:hover {
+            font-weight: 700;
+        }
+
+
+        .notice li {
             border-bottom: 1px dotted red;
         }
 
-        span {
+        .notice span {
             display: inline-block;
-            width: 335px;
+            width: 310px;
+            /* ...효과 */
+            text-overflow: ellipsis;
+            overflow: hidden;
+            /* text-wrap: nowrap; */
+            white-space: nowrap;
+            /* 수직 정렬 */
+            vertical-align: top;
         }
-
     </style>
 </head>
 
 <body>
     <h1>표(table)</h1>
     <h2>공지사항</h2>
-    <table>
+    <ul class="notice">
         <li>
             <a href="#"><span>맞춤 플랜을 제안하는 크리에이티브 입니다.</span> 2019.03.20</a>
         </li>
@@ -42,7 +63,7 @@
         <li>
             <a href="#"><span>마진없이 아낌없이 드리는 마지막 찬스!</span> 2019.09.28</a>
         </li>
-    </table>
+    </ul>
 </body>
 
 </html>
