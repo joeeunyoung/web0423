@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* @: 엣 */
+
+/* shift+alt+f 정렬하기 */
+/* shift+alt+아래방향키 - 복사 */
+.contents {
+    display: flex;
+}
+
+/* 
+    선택자
+    1. 클래스: .이름
+    2. 그룹: ,
+    3. 요소(태그, 타입): 태그명
+    4. 하위: 부모 자식(손자) : 공백 (한칸 띄어쓰는것)
+*/
+/* 부모 자식 or 부모 손자 */
+.contents div {
+    width: 400px;
+    height: 200px;
+}
+/* div div { 위에거랑 같은 표현 contents대신 div를 써도 된다.그러나 위에 표현이 문제가 안일어난다. 둘다 다 쓰는 표현
+    width: 400px;
+    height: 200px;
+} */
+.tabs {
+    background: #eee;
+}
+
+.banner {
+    background: #ccc;
+}
+
+.shortcut {
+    background: #aaa;
+}
+

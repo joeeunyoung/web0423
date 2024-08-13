@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallery-Festival_조은영</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,h1,p,ul {
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* 타이포 */
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+        body {
+            /* 글자 크기/줄간격(lh) 클자스타일 - 속기형 */            
+            font: 15px/1.6 "IBM Plex Sans KR", sans-serif;
+        }
+
+        /* 풀페이지 레이아웃 */
+        .wrap {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: center;/* 가로 가운데 */
+            align-items: center;/* 세로 가운데 */
+            height: 200px;
+            background: #ccc;
+        }
+
+        /* 로고 */
+        .logo {
+            animation: logo 1s;
+            margin-top: 0;
+        }
+
+        @keyframes logo {
+            0% {margin-top: -100px;}
+            100% {margin-top: 0px;}
+        }
+
+        /* 네비게이션 */
+        .gnb {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 9999;/* 올려서 화면에 보이게 1만 써도 올라가지만 많은 숫자 */
+            background: purple;
+        }
+
+        /* 1depth */
+        .main {
+            display: flex;
+            height: 40px;
+        }
+
+        .main>li {
+            width: 160px;
+            height: 40px;
+            /* 텍스트를 세로 중앙 배치 */
+            line-height: 40px;
+            /* 상속된다. */
+            /* 모든 메뉴 가로 가운데 배치 */
+            text-align: center;
+            /* 글자는 상속. 서브메뮤도 적용 */
+        }
+
+        .main>li:hover {
+            background: pink;
+        }
+
+        /* 2depth */
+        .sub {
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+            padding: 10px 0 20px;
+            /* 숫자가 작을 수록 빠르다. */
+            transition: .3s;
+            line-height: 2;
+        }
+
+        /* 선택자가 변경됨: >li 제거 */
+        /* 유형1: .main>li:hover .sub */
+        .main:hover .sub {
+            height: 150px;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .sub li a {
+            padding: 4px 16px;
+            color: #fff
+        }
+
+        .sub li:hover a {
+            background: plum;
+        }
+
+
+        .main::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 0px;
+            opacity: 0;
+            transition: .3s;
+            background: palevioletred;
+        }
+
+        .main:hover::before {
+            height: 150px;
+            opacity: 1;
+        }
+
+        /* 슬라이드 */
+        .slide {
+            height: calc(100% - 340px);
+            overflow: hidden;
+        }
+
+        .slide ul {
+            display: flex;
+            width: 400%;
+            height: 100%;
+            animation: slide 12s infinite;
+        }
+
+        .slide li {
+            width: 25%;
+            height: 100%;
+            background: no-repeat 50% 50%/cover;
+            text-indent: -9999em;
+        }
+
+        .slide li:nth-child(1) {background-image: url(images/Vallery-Festival1.jpg);}
+        .slide li:nth-child(2) {background-image: url(images/Vallery-Festival2.jfif);}
+        .slide li:nth-child(3) {background-image: url(images/Vallery-Festival3.jpg);}
+        .slide li:nth-child(4) {background-image: url(images/Vallery-Festival1.jpg);}
+
+        /* animation */
+        @keyframes slide {
+            0% {
+                transform: translate(0%, 0%);
+            }
+
+            10% {
+                transform: translate(-25%, 0%);
+            }
+
+            33% {
+                transform: translate(-25%, 0%);
+            }
+
+            43% {
+                transform: translate(-50%, 0%);
+            }
+
+            66% {
+                transform: translate(-50%, 0%);
+            }
+
+            76% {
+                transform: translate(-75%, 0%);
+            }
+
+            99.99% {
+                transform: translate(-75%, 0%);
+            }
+
+            100% {
+                transform: translate(0%, 0%);
+            }
+        }
+
+        footer {
+            background: #333;
+            text-align: center;/* 수평가운데 */
+            line-height: 100px;/* 수직가운데 */
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo"><a href="#">Vallery-Festival</a></h1>
+        </header>
+        <!-- 네비게이션 -->
+        <nav class="gnb">
+            <!-- 1depth  -->
+            <ul class="main">
+                <li>
+                    <a href="#">축제소개</a>
+                    <!-- 2depth -->
+                    <ul class="sub">
+                        <li><a href="#">Festival 소개</a></li>
+                        <li><a href="#">행사장 안내</a></li>
+                        <li><a href="#">조직위원회</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">예약안내</a>
+                    <ul class="sub">
+                        <li><a href="#">예약하기</a></li>
+                        <li><a href="#">예약확인/취소</a></li>
+                        <li><a href="#">단체예약문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">아티스트</a>
+                    <ul class="sub">
+                        <li><a href="#">고릴라즈</a></li>
+                        <li><a href="#">메이저 레이저</a></li>
+                        <li><a href="#">아우스게인</a></li>
+                        <li><a href="#">타임로드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">사진갤러리</a></li>
+                        <li><a href="#">영상갤러리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- 슬라이드 -->
+        <div class="slide">
+            <ul>
+                <li>슬라이드 이미지1</li>
+                <li>슬라이드 이미지2</li>
+                <li>슬라이드 이미지3</li>
+                <li>슬라이드 이미지4</li>
+            </ul>
+        </div>
+        <!-- 푸터 -->
+        <footer><p>Copyright 2024. Vallery Festival.</p></footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/*<!-- W3C HTML과 CSS문서를 분리하라!!! -->
+<>
+    /* 내부 스타일(내부 css) */
+    /* 선택자 {속성: 값;} */
+    /* 
+        가상(슈도) 클래스 선택자
+        a:link 방문전(평상시)
+        a:visited 방문후(클릭후)
+/*      a:hover -> 마우스를 올렸을 때
+        선택자:hover
+        a:active 
+        선택자:active ->눌렸을 때 
+        */
+/* 4가지 상황을 사용하려면 아래 순으로 코딩한다. */
+/* a요소를 방문전(클릭하기 전) 글자색 색상이 aqua */
+/* a:link {color:aqua} */
+/* a요소를 방문후(클릭후) 글자색 색상이 red */
+/* a:visited {color: red;} */
+/* a요소에 마우스를 올리면 글자색이 blue */
+/* a:hover {color: blue;} */
+/* a요소를 마우스로 누르고 있으면 글자색이 yellow */
+/* a:active {color: yellow;} */
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: underline;
+}

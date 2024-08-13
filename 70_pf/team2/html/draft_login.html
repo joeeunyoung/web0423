@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>니베아</title>
+    <style>
+        /* reset */
+        body {margin: 0;}
+        img {width: 100%; height: auto; vertical-align: top;}
+
+        /* phone */
+        [alt*="PC"] {display: none;}
+        @media (min-width: 768px) {
+            /* tablet */
+            [alt="phone"] {display: none;}
+            [alt*="ta"] {display: block;}
+        }
+        @media (min-width: 992px) {
+            /* desktop */
+            /* 
+                속성 선택자
+                    [속성="값"] -> 값이 일치
+                    [속성*="값"] -> 값을 포함
+
+            */
+            [alt*="ta"] {display: none;}
+            [alt*="d"] {display: block;}
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 파일 폴더 명명 규칙 -->
+    <img src="../assets/login/draft_login_da.png" alt="desktop PC" usemap="#image-map-desktop">    
+    <img src="../assets/login/draft_login_ta.png" alt="tablet PC" usemap="#image-map-tablet">
+    <img src="../assets/login/draft_login_ph.png" alt="phone" usemap="#image-map-phone">
+
+    <map name="image-map-desktop">
+        <!-- shape="rect" coords="x1,y1,x2,y2" -->
+        <area alt="로고" title="로고입니다. 누르면 메인 페이지로 이동됩니다." href="../draft.html" coords="878,32,1036,80" shape="rect">
+        <area alt="조언" title="눌러보세요. 조언 페이지로 이동됩니다." href="sub/draft_advice.html" coords="985,102,912,134" shape="rect">
+        <area alt="니베아월드" title="눌러보세요. 니베아월드 페이지로 이동됩니다." href="sub/html/sub/draft_niveaworld.html" coords="1134,102,1219,132" shape="rect">
+        <area alt="로그인" title="눌러보세요. 로그인 페이지로 이동됩니다." href="draft_login.html" coords="130,44,172,68" shape="rect">
+    </map>
+
+    <map name="image-map-tablet">
+        <area target="" alt="로고" title="로고" href="#" coords="446,50,322,10" shape="rect">
+    </map>
+
+    <map name="image-map-phone">
+        <area target="" alt="로고" title="로고" href="#" coords="124,10,231,37" shape="rect">
+    </map>
+</body>
+</html>

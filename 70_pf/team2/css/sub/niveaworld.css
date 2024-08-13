@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import url(../reset.css);
+@import url(../common.css);
+
+
+/* 섹션1 */
+section.s1 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.s1 .text {
+    width: 85vh;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text p {
+    display: none;
+}
+.bg_circle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    height: 500px;
+    background: #0033a081;
+    border-radius: 50%;
+}
+
+.s1 img {
+    width: 100%;
+    height: 500px;
+    margin: 0 aute;
+}
+
+/* 섹션2 */
+.s2 .ibx {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.s2 .title {
+    text-align: center;
+    margin: 94px 0 21px 0;
+}
+
+.s2 .arrow {
+    /* 가로 가운데 배치: width+margin */
+    width: 23px;
+    margin: 0 auto;
+}
+
+/* 768이상: 테블릿 */
+@media (min-width: 768px) {
+    .text p {
+        display: inline-block;
+    }
+}
+
+/* 992이상: 데스크탑 */
+@media (min-width: 992px) {
+
+}

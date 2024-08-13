@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--slick 슬라이더 CSS 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!--slick 슬라이더 테마 CSS 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <!-- 사용자 CSS -->
+     <link rel="stylesheet" href="css/section5.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick 슬라이더 JS 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script>
+        // 벤치: https://dessert39.com/main.php 
+
+        $(() => {
+            $('.slider').slick({
+                // 데스크탑
+                // 자동 슬라이드
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToScroll: 1,
+                // 현재 보이는 슬라이드 수
+                slidesToShow: 3,
+                centerMode: true,
+                centerPadding: '145px',
+                responsive: [
+                    {
+                        // 992 이하 테블릿
+                        breakpoint: 992,
+                        settings: {
+                            // arrows: false -> 좌우버튼 숨기기
+                            centerMode: true,
+                            centerPadding: '180px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        // 768 이하 폰
+                        breakpoint: 768,
+                        settings: {
+                            // arrows: false -> 좌우버튼 숨기기
+                            centerMode: true,
+                            centerPadding: '30px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        }); // ready 이벤트
+    </script>
+</head>
+
+<body>
+    <div class="slider">
+        <div>
+            <img src="../homebanchan/assets/section5/food1.jpg" alt="슬라이드 이미지1">
+            <div class="tit">
+                <h3>한돈 된장 불고기_반조리</h3>
+                <p>아이도 먹기 좋은 담백한 불고기</p>
+                <p>12,800원</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food2.jpg" alt="슬라이드 이미지2">
+            <div class="tit">
+                <h3>[24년 8월 신메뉴]피스타치오크림 음료 3종 출시!</h3>
+                <p>2024-08-02</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food3.jpg" alt="슬라이드 이미지3">
+            <div class="tit">
+                <h3>[24년 7월 신메뉴]오레오 쉐이크 3종 출시!</h3>
+                <p>2024-07-29</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food4.jpg" alt="슬라이드 이미지4">
+            <div class="tit">
+                <h3>[24년 7월 신메뉴]카라멜 인절미 퐁 라떼 출시!</h3>
+                <p>2024-07-29</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food5.jpg" alt="슬라이드 이미지5">
+            <div class="tit">
+                <h3>[24년 7월~8월 이벤트]디저트39 X 사이퍼즈...</h3>
+                <p>2024-07-25</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food6.jpg" alt="슬라이드 이미지6">
+            <div class="tit">
+                <h3>[24년 7월 신메뉴]설탕 무첨가 과일 슬러시 4종...</h3>
+                <p>2024-07-18</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food7.jpg" alt="슬라이드 이미지7">
+            <div class="tit">
+                <h3>[24년 7월 신메뉴]애사비 탄산수 3종 출시!</h3>
+                <p>2024-07-18</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food8.jpg" alt="슬라이드 이미지8">
+            <div class="tit">
+                <h3>[24년 7월 신메뉴]코코넛 프라페 2종 출시!</h3>
+                <p>2024-07-09</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food9.jpg" alt="슬라이드 이미지9">
+            <div class="tit">
+                <h3>[24년 8월 신메뉴]저칼로리 & 라이스 슬림...</h3>
+                <p>2024-08-02</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food10.jpg" alt="슬라이드 이미지10">
+            <div class="tit">
+                <h3>[24년 8월 신메뉴]저칼로리 & 라이스 슬림...</h3>
+                <p>2024-08-02</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food11.jpg" alt="슬라이드 이미지11">
+            <div class="tit">
+                <h3>[24년 8월 신메뉴]저칼로리 & 라이스 슬림...</h3>
+                <p>2024-08-02</p>
+            </div>
+        </div>
+        <div>
+            <img src="../homebanchan/assets/section5/food12.jpg" alt="슬라이드 이미지12">
+            <div class="tit">
+                <h3>[24년 8월 신메뉴]저칼로리 & 라이스 슬림...</h3>
+                <p>2024-08-02</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

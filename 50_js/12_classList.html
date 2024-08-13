@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {font-size: 50px;}
+        /* 띄어쓰기 안하면 p테그이면서 class가 .on인것 */
+        p.on {color: red;}
+    </style>
+</head>
+<body>
+    <h1>HTML요소에 class를 추가/제거하기</h1>
+    <div class="btn">
+        <a href="#" class="red">버튼1</a>
+        <a href="#" class="black">버튼2</a>
+    </div>
+    <p>나는 단락이다.</p>
+
+    <script>
+        // 버튼1을 클릭하면 p를 선택하여 글자의 색상을 red로 지정한다. 그리고, 버튼 2를  클릭하면 p를 선택하여 글자의 색상을 black으로 지정한다.(단 classList를 사용할 것)
+        
+        // 요소찾기
+        const btn1 = document.querySelector('.red')
+        const btn2 = document.querySelector('.black')
+        const p = document.querySelector('p')
+
+        // p.style.color = "red";
+        // p에 on클래스를 추가한다. 이걸로 작품 만들거임!!!!!
+
+        btn1.onclick = function(){
+            // p에 클래스 .on을 추가한다.
+            p.classList.add('on');
+        }
+
+        btn2.onclick = function(){
+            // p에 클래스 .on을 지운다.
+            p.classList.remove('on');
+        }
+    </script>
+</body>
+</html>

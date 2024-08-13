@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* @: 엣 */
+
+/* shift+alt+f 정렬하기 */
+/* shift+alt+아래방향키 - 복사 */
+.wrap {
+    width: 1200px;
+    margin: 0;
+    auto;
+}
+
+.header {
+    background: #eee;
+    height: 100px;
+}
+
+.s1 {
+    background: #ccc;
+    height: 300px;
+}
+
+.s2 {
+    background: #aaa;
+    height: 200px;
+}
+
+.footer {
+    background: #111;
+    height: 100px;
+}

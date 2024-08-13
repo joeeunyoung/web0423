@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+
+@import url(common/footer.css);
+
+/* 리셋 */
+* {
+    /* border와 padding 값이 width/height에 포함 */
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+ul,
+p {
+    margin: 0;
+}
+
+body {
+    background: #fff;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+img {
+    width: 100%;
+}
+
+/* 타이포 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 글자 크기 rem 단위 사용! */
+/* :root는 html와 같다. */
+/* rem 단위는 html에서 지정한 글자 크기의 배수 */
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #666666;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+
+
+/* 전체 영역 */
+.wrap {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+/* 헤더 영역 */
+header {
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 블록레벨요소의 가로 가운데 배치: width, margin */
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+/* 로고 */
+.logo {
+    width: 107px;
+    height: 50px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* 내비게이션 */
+.gnb {
+    align-self: flex-end;
+    background: #111;
+    z-index: 9999;
+}
+
+/* 1depth */
+.main {
+    display: flex;
+    height: 30px;
+}
+
+.main>li {
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.main>li:hover {
+    background: #333;
+}
+
+/* 서브바 */
+.main::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main:hover::before {
+    height: 150px;
+    opacity: 1;
+}
+
+/* 2depth */
+.sub {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 0 20px;
+    transition: .3s;
+    line-height: 2;
+}
+
+.main:hover .sub {
+    height: 300px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub li a {
+    padding: 4px 16px;
+}
+
+.sub li:hover a {
+    background: #111;
+}
+
+
+
+/* 내비게이션 */
+/* font의 위계 */
+/* 1depth, mainmenu */
+.main>li>a {
+    font-size: 1.6rem;
+    color: #999;
+}
+
+.main li:hover a {
+    color: #fff;
+}
+
+/* 2depth, submenu */
+.sub li a {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+/* stot menu */
+.spot_menu {
+    font-size: 1.2rem;
+}
+
+/* 슬라이드 */
+#slide {
+    height: calc(100% - 450px);
+    overflow: hidden;
+}
+
+#slide ul {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slide 12s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    10% {
+        transform: translate(-25%, 0%);
+    }
+
+    33% {
+        transform: translate(-25%, 0%);
+    }
+
+    43% {
+        transform: translate(-50%, 0%);
+    }
+
+    66% {
+        transform: translate(-50%, 0%);
+    }
+
+    76% {
+        transform: translate(-75%, 0%);
+    }
+
+    99.99% {
+        transform: translate(-75%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+/* #slide li {
+    width: 25%;
+    height: 100%;
+    background: no-repeat 50% 50%/cover;
+    text-indent: -9999em;
+}
+#slide li:nth-child(1) {background-image: url(../images/S_슈퍼레시가드1.jpg);}
+#slide li:nth-child(2) {background-image: url(../images/S_피오르샌들2.jpg);}
+#slide li:nth-child(3) {background-image: url(../images/S_하나된우리3.jpg);}
+#slide li:nth-child(4) {background-image: url(../images/S_슈퍼레시가드1.jpg);} */
+
+/* 메인 콘텐츠 */
+#main_contents {
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+/* 공지사항 및 갤러리 */
+#tab_wrap {
+    display: flex;
+    height: 250px;
+}
+
+#tab_wrap .tabs {
+    position: relative;
+    top: 12px;
+    width: 550px;
+    height: 220px;
+}
+
+#tab_wrap .tabs input {
+    display: none;
+}
+
+/* 탭의 버튼 */
+#tab_wrap .tabs label {
+    position: relative;
+    left: 10px;
+    top: 1px;
+    display: inline-block;
+    /* label의 높이는 4px */
+    padding: 4px 24px;
+    background: #999;
+    color: #777;
+    /* 손 모양 */
+    cursor: pointer;
+}
+
+/* .tabs 안의 하위요소인 체크된 input 아래 동생 label을 선택 */
+#tab_wrap .tabs input:checked+label {
+    z-index: 99;
+    background: #fff;
+    color: #111;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+/* 탭의 콘텐츠 */
+#tab_wrap .tabs>div {
+    display: none;
+    /* position:absolute;이면 width는 콘텐츠 크기 */
+    position: absolute;
+    width: 100%;
+    /* 32px은 label의 높이 */
+    height: calc(100% - 32px);
+    padding: 16px 20px;
+    border: 1px solid #ccc;
+}
+
+/* 체크된 input의 아래 label 아래 div만 보이게한다. */
+#tab_wrap .tabs input:checked+label+div {
+    display: block;
+}
+
+/* 공지사항의 콘텐츠 */
+#tab_wrap .tab1 li {
+    line-height: 2.3;
+    border-bottom: 1px dotted #ccc;
+}
+
+#tab_wrap .tab1 li a {
+    display: inline-block;
+    width: 422px;
+}
+
+/* 갤러리의 콘텐츠 */
+#tab_wrap .tab2 ul {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.3;
+    margin-top: 8px;
+}
+
+#tab_wrap .tab2 span {
+    display: block;
+    width: 150px;
+    height: 100px;
+    background: #ccc;
+}
+
+#contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    height: 250px;
+
+}
+
+.content1 {
+    width: 320px;
+    height: 230px;
+    background: #000;
+}
+
+.content2 {
+    width: 320px;
+    height: 230px;
+    background: #000;
+}
+
+/* 푸터 영역 */
+footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: #111;
+    color: #fff;
+}
+
+/* 하단 로고 */
+footer .flogo {
+    width: 190px;
+    text-align: center;
+}
+
+/* 주소 및 저작권 */
+footer .flogo img {
+    width: 107px;
+    height: 50px;
+}
+
+footer p {
+    width: 850px;
+    text-align: center;
+}
+/* 주소 및 저작권 */
+footer .add {
+    width: 850px;
+}
+
+.copyright {
+    font-size: 1.2rem;
+}
+/* SNS */
+/* 폰트어썸 코드로 삽입하기 */
+footer .sns a {
+    margin: 0 8px;
+    font-size: 3rem;
+}
+
+footer .sns a i {
+    color: #555;
+    transition: .3s;
+}
+
+footer .sns a:hover i {
+    transform: scale(1.2, 1.2);
+}
+
+footer .sns a:nth-child(1):hover i {
+    color: #1877F2;
+}
+
+footer .sns a:nth-child(2):hover i {
+    color: #1D9BF0;
+}
+
+footer .sns a:nth-child(3):hover i {
+    color: #B803EE;
+}

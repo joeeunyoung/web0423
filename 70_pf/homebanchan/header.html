@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집반찬연구소:해더</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        ul,h1 {
+            margin: 0;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        :root {
+            font-size: 10px;
+        }
+
+        body {
+            background: url(../homebanchan/assets/s7.jpg);
+            font-family: "Noto Sans KR", sans-serif; font-size: 1.5rem; color: #1b1b1b;
+            line-height: 1.5;
+        }
+
+        /* font의 위계 */
+        /* 1depth, mainmenu */
+        #header .main>li>a {
+            font-size: 1.8rem;
+            color: #fff;
+            /* transition: .3s; */
+        }
+
+        #header .main li:hover a {
+            color: gray;
+            /* text-decoration-line: underline; */
+        }
+
+        /* 2depth, submenu */
+        #header .sub li a {
+            font-size: 1.6rem;
+            color: #ffff;
+        }
+
+        #header .gnb {
+            display: flex;/* 가로 배치 */
+            justify-content: space-between;
+            align-items: center;/* 세로 중앙 */
+            height: 100px;
+            padding: 0 48px 0 58px;
+        }
+
+        #header .gnb:hover {
+            background: #0D5611;
+        }
+
+        /* 1depth */
+        #header .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #header .main>li {
+            width: 160px;
+            height: 50px;
+            /* 메인메뉴 텍스트를 세로 중앙 배치 */
+            line-height: 50px;
+            /* 상속된다. */
+            /* 모든 메뉴 가로 가운데 배치 */
+            text-align: center;
+            /* 글자는 상속. 서브메뉴도 적용 */
+        }
+
+        /* .main>li:hover {
+            background: pink;
+        } */
+
+        /* 2depth */
+        #header .sub {
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+            padding: 30px 0 20px;
+            transition: .3s;
+            line-height: 2; 
+        }
+
+        /* 유형1: .main>li:hover .sub */
+        #header .main:hover .sub {
+            height: 200px;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        #header .sub li a {
+            /* padding: 4px 16px; */
+            color: #000;
+        }
+
+        #header .sub li:hover a {
+            color: #000;
+        }
+
+        /* 유형3의 추가 코드 */
+
+        #header .gnb {
+            width: 100%;
+        }
+        #header .gnb h1 {
+            font-size: 1.4rem;
+            letter-spacing: 0.4rem;
+            text-align: center;
+            padding-bottom: 8px;
+        }
+        #header .gnb h1 a {color: #fff;}
+        #header .gnb h1:hover a {color: gray;}
+        #header .gnb h1 b {font-size: 2.2rem; font-weight: normal;}
+        #header .gnb h1 span {font-weight: normal;}
+
+        #header .sns {display: flex;}
+        #header .sns a {color: #fff;}
+        #header .sns a:hover {color: gray;}
+        /* .sns li:first-child:hover { background: url(assets/header_youtube.svg) no-repeat 0 0;} */
+        #header .sns li:first-child::after {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            margin: 0 12px 4px;
+            background: #fff;
+        }
+        #header .sns li:last-child {margin-left: 12px;}
+        #header .sns li:not(:first-child) {font-size: 13px; padding-top: 1px;}
+
+        #header .main {
+            /* position: relative; */
+            /* height: 50px; */
+            line-height: 50px;
+        }
+
+        #header .main::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 30px;
+            right: 0;
+            display: block;
+            width: 100%;
+            height: 0px;
+            opacity: 0;
+            transition: .3s;
+            background: #fff;
+        }
+
+        #header .main:hover::before {
+            height: 250px;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div></div> -->
+    <!-- header>nav.gnb>ul.main>li*4>a[href="#"]{메인메뉴$}+ul.sub>li*4>a[href="#"]{서브메뉴$}  -->
+    <header id="header">
+        <!-- 네비게이션 -->
+        <nav class="gnb">
+            <!-- logo -->
+            <h1><a href="#"><b>HOMEBANCHAN</b><br><span>집반찬연구소</span></a></h1>
+            <!-- 1depth  -->
+            <ul class="main">
+                <li>
+                    <a href="#">모든반찬</a>
+                    <!-- 2depth -->
+                    <ul class="sub">
+                        <li><a href="#">특별 식단</a></li>
+                        <li><a href="#">가족 식단</a></li>
+                        <li><a href="#">오늘의 추천반찬</a></li>
+                        <li><a href="#">무침</a></li>
+                        <li><a href="#">조림 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">간편검색</a>
+                    <ul class="sub">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">냉동</a></li>
+                        <li><a href="#">따뜻하게 먹는 반찬</a></li>
+                        <li><a href="#">제철반찬</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">인기검색</a>
+                    <ul class="sub">
+                        <li><a href="#">인기</a></li>
+                        <li><a href="#">어린이반찬</a></li>
+                        <li><a href="#">부모님반찬</a></li>
+                        <li><a href="#">할인반찬</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+            <ul class="sns">
+                <li><a href="#">SNS</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+</html>

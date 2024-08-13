@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bx슬라이더 라이브러리 5번째꺼-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <!-- 제이쿼리 라이브러리 파일이 위쪽으로 지정 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bx슬라이더 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script>
+        /* 
+            예제 코드 
+            https://bxslider.com/examples/auto-show-start-stop-controls
+
+            1. 위 사이트의 HTML 코드를 <body>태그 사이에 븥여 넣기한다.
+            2. img태그의 이미지 경로와 파일 변경한다. alt속성 추가
+            3. <scirpt>태그 사이에 제이쿼리 로드 이벤트 작성후 
+            4. 위 사이트의 js 코드를 로드 이벤트 사이에 붙여 넣기한다.
+            5. 제이쿼리, bx슬라이더 라이브러리 파일을 연결한다.
+                cdnjs.com
+                가) 제이쿼리.min.js -> <scirpt>
+                나) bx슬라이더.min.js -> <scirpt>
+                다) bx슬라이더.min.css -> <ink> 
+        */
+        // 로드 이벤트
+        // window.addEventListener("DOMContentLoaded", ()=>{});
+        // bxSlider은 제이쿼리 플러그인 프로그램이다.
+        // $(document).ready(()=>{});
+        $(()=>{
+            $('.bxslider').bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 600
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="bxslider">
+        <div><img src="../assets/pic_1.jpg" alt="슬라이드 이미지1"></div>
+        <div><img src="../assets/pic_2.jpg" alt="슬라이드 이미지2"></div>
+        <div><img src="../assets/pic_3.jpg" alt="슬라이드 이미지3"></div>
+      </div>
+</body>
+</html> 

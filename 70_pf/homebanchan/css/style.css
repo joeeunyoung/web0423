@@ -1,0 +1,470 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css);
+
+
+/* fullpage */
+/* fullpage - 왼쪽 하단에 있는 메뉴 */
+#home_nav {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/* 푸터에 있는 높이 */
+.fp-auto-height>div {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding: 40px 80px 0 58px;
+    color: white;
+    background: #2c2d2f;
+}
+
+.footer-logo {
+    padding-top: 20px;
+}
+
+.footer-logo img {
+    width: 136px;
+    height: 53px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.footer-links a:nth-child(1) {
+    margin-left: 0;
+}
+
+.footer-links img {
+    width: 28px;
+}
+
+.footer-info .comInfo {
+    padding-top: 10px;
+    color: #626264;
+}
+
+.footer-info p:not(:first-child) {
+    display: inline
+}
+
+.footer-info .Copyright {
+    padding: 10px 0 30px 0;
+    color: #626264;
+}
+
+/* .footer-info p:not(:first-child)::before {
+    content:'|'; margin-right: 24px;
+} */
+
+.footer-sites {
+    padding-top: 20px;
+}
+
+.footer-sites a {
+    display: inline-block;
+    padding-left: 20px;
+    width: 240px;
+    height: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #b9b9b9;
+    background: #494949 url(../assets/arr_icon.png) right 21px center no-repeat;
+}
+
+
+/* 푸터 영역 오른쪽 중앙에 있는 인디케이션 숨김 */
+#fp-nav.right li:last-child {
+    display: none;
+}
+
+/* common */
+/* section {
+    height: 100vh;
+} */
+
+.ibx {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    /* height: 100px; */
+}
+
+/* 1depth, mainmenu */
+#header .main>li>a {
+    font-size: 1.8rem;
+    color: #fff;
+    transition: .3s;
+}
+
+#header .main li:hover a {
+    color: gray;
+}
+
+/* 2depth, submenu */
+#header .sub li a {
+    font-size: 1.6rem;
+    color: #ffff;
+}
+
+#header .gnb {
+    display: flex;
+    /* 가로 배치 */
+    justify-content: space-between;
+    align-items: center;
+    /* 세로 중앙 */
+    height: 100px;
+    padding: 0 48px 0 58px;
+}
+
+#header .gnb:hover {
+    background: #0D5611;
+}
+
+/* 1depth */
+#header .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .main>li {
+    width: 160px;
+    height: 50px;
+    /* 메인메뉴 텍스트를 세로 중앙 배치 */
+    line-height: 50px;
+    /* 상속된다. */
+    /* 모든 메뉴 가로 가운데 배치 */
+    text-align: center;
+    /* 글자는 상속. 서브메뉴도 적용 */
+}
+
+/* 2depth */
+#header .sub {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    padding: 30px 0 20px;
+    transition: .3s;
+    line-height: 2;
+}
+
+/* 유형1: .main>li:hover .sub */
+#header .main:hover .sub {
+    height: 200px;
+    visibility: visible;
+    opacity: 1;
+}
+
+#header .sub li a {
+    /* padding: 4px 16px; */
+    color: #000;
+}
+
+#header .sub li:hover a {
+    color: #000;
+}
+
+/* 유형3의 추가 코드 */
+
+#header .gnb {
+    width: 100%;
+}
+
+#header .gnb h1 {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+#header .gnb h1 a {
+    color: #fff;
+}
+
+#header .gnb h1:hover a {
+    color: gray;
+}
+
+#header .gnb h1 b {
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+#header .gnb h1 span {
+    font-weight: normal;
+}
+
+#header .sns {
+    display: flex;
+}
+
+#header .sns a {
+    color: #fff;
+}
+
+#header .sns a:hover {
+    color: gray;
+}
+
+/* .sns li:first-child:hover { background: url(assets/header_youtube.svg) no-repeat 0 0;} */
+#header .sns li:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin: 0 12px 4px;
+    background: #fff;
+}
+
+#header .sns li:last-child {
+    margin-left: 12px;
+}
+
+#header .sns li:not(:first-child) {
+    font-size: 13px;
+    padding-top: 1px;
+}
+
+#header .main {
+    /* position: relative; */
+    /* height: 50px; */
+    line-height: 50px;
+}
+
+#header .main::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    transition: .3s;
+    background: #fff;
+}
+
+#header .main:hover::before {
+    height: 250px;
+    opacity: 1;
+}
+
+
+/* 섹션1 */
+
+/* 슬라이드 */
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+}
+
+.bx-viewport {
+    height: 100% !important;
+}
+
+.bx-wrapper li {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-pager {
+    bottom: 30px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #fff;
+    margin: 0 18px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    transform: scale(2, 2);
+    background: #1c4931;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    width: 40px;
+    height: 80px;
+}
+
+.bx-wrapper .bx-prev {
+    left: 160px;
+    background: url(../assets/prev.svg) no-repeat 0px 0px;
+}
+
+.bx-wrapper .bx-next {
+    right: 160px;
+    background: url(../assets/next.svg) no-repeat 0px 0px;
+}
+
+/* next 버튼 호버시 사라지는 현상 초기화 */
+.bx-wrapper .bx-next:focus,
+.bx-wrapper .bx-next:hover {
+    background-position: 0 0;
+}
+
+/* 텍스트 */
+#s1 .slideWrap p {
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 섹션2 */
+#s2 .ibx h2 {
+    text-align: center;
+}
+
+#s2 .ibx h2+p {
+    text-align: center;
+    margin: 24px 0 48px;
+}
+
+/* 탭 공통 */
+#s2 #tabs {
+    position: relative;
+}
+
+#s2 #tabs ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* 탭의 버튼 */
+#s2 #tabs>ul {
+    position: absolute;
+    right: 0;
+    width: 474px;
+}
+
+#s2 #tabs>ul>li:not(:first-child) {
+    margin: 0 16px;
+}
+
+#s2 #tabs>ul>li:not(:first-child)::before {
+    content: '|';
+    margin-right: 24px;
+}
+
+/* 탭의 콘텐츠 */
+#s2 #tabs>div ul {
+    height: 432px;
+}
+
+#s2 #tabs>div ul li:nth-child(1) {
+    align-self: flex-start;
+}
+
+#s2 #tabs>div ul li:nth-child(2) {
+    margin: 0 30px 0 75px;
+}
+
+#s2 #tabs>div ul li {
+    height: 216px;
+}
+
+#s2 #tabs>div a {
+    display: block;
+    width: 222px;
+    height: 168px;
+}
+
+#s2 #tabs>div h3 {
+    margin-top: 16px;
+}
+
+#s2 #tabs>div a.rank1 {
+    width: 570px;
+    height: 432px;
+}
+
+#s2 #tabs>div a.rank1+h3 {
+    position: absolute;
+    width: 474px;
+    height: 48px;
+    right: 0;
+    top: 48px;
+    text-wrap: nowrap;
+}
+
+/* 탭의 기능 핵심 */
+#s2 #tabs>div {
+    display: none;
+}
+
+#s2 #tabs>div.on {
+    display: block;
+}
+
+
+/* 섹션4 */
+#s4 {
+    background: url(../assets/allfood.jpg) no-repeat 960px 0;
+}
+
+#s4 .ibx {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#s4 .cont {
+    position: relative;
+    width: 560px;
+}
+
+#s4 .cont::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 135px;
+    width: 440px;
+    height: 40px;
+    background: #0D5611;
+}
+
+#s4 h3 {
+    z-index: 1;
+    position: relative;
+    margin: 24px 0 48px 0;
+}
+
+#s4 p:last-of-type {
+    margin: 24px 0;
+}
+
+#s4 .link a {
+    display: inline-block;
+    padding: 16px 24px;
+    background: #0D5611;
+    transition: .1s;
+}
+
+#s4 .link a:hover {
+    transform: translateY(-4px);
+    background: #0D5611;
+}
+
+#s4 .link a:first-child {
+    margin-right: 20px;
+}
