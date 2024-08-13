@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLRecipes</title>
+    <style>
+        @import url(style/typo.css);
+
+        h2 {
+            letter-spacing: 4px;
+            font-weight: 400;
+        }
+
+        b {
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            margin-right: 16px;
+        }
+
+        section {
+            position: relative;/* 부모에게 */
+            /* display: flex;
+            justify-content: center; -> margin: 0 auto; 대치됬다*/
+            border: 1px solid red;
+        }
+        h2 {
+            position: absolute;/* 자식에게 부모 크기의 50% */
+            left: 50%;
+            top: 50%;
+            margin-left: -110px;/* 글자크기의 반만큼 빼준다. */
+            margin-top: -16px;
+            /* 
+            position: absolute;/* 자식에게 부모 크기의 50% 
+            left: 50%;
+            top: 50%;
+
+            */
+        }
+        div {
+            width: 1496px;
+            margin: 0 auto;/* div 박스가 가운데로 오도록 width가 있어야 한다. */
+            height: 745px;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- section 태그는 그 안에 h2~h6 제목이 반드시 존재해야 한다. -->
+    <section>
+        <h2><b>ALL</b>Recipes</h2>
+        <div><!-- 베너 이미지 삽입(img ) --></div>
+    </section>
+</body>
+
+</html>

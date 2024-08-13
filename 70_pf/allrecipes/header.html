@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLRecipes</title>
+    <style>
+        /* 초기화 */
+        @import url(css/reset.css);
+        /* 타이포 */
+        @import url(css/typo.css);
+        /* http://codingand.dothome.co.kr/br_architects/#contact */
+
+        /* 헤더 영역 */
+        /* background 꼭지정해야 한다. 아니면 투명이고 다른사람이 바꿀수있다. */
+        header {
+            display: flex;/* 가로 배치 */
+            justify-content: space-between;
+            align-items: center;/* 세로 중앙 */
+            height: 54px;
+            padding: 0 30px;
+            background: #fff;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+        nav ul {
+            display: flex;
+            
+        }
+        nav ul li {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <!-- logo -->
+        <h1><a href="#"><b>ALL</b> Recipes</a></h1>
+        <!-- 네비게이션 -->
+        <nav>
+            <ul>
+                <li><a href="#">명예의 전당</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">쉐프소개</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
