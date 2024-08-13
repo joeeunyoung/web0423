@@ -87,11 +87,11 @@ h3 span {
 }
 
 /* 회전 아이콘 */
-/* #a-icon {
+#a-icon {
     font: 600 20px Georgia;
-} */
+}
 /* 호버시 박스쉐도우 없애는 거: 클래스 추가해서 지정 */
-/* .home-icon.home-icon-rotate:hover {box-shadow: none;}
+.home-icon.home-icon-rotate:hover {box-shadow: none;}
 
 #rotate3d {
     width: 100px;
@@ -127,7 +127,7 @@ h3 span {
 #rotate3d .back {
     background: lightblue;
     backface-visibility: hidden;
-} */
+}
 /* /회전 아이콘 */
 
 /* footer */
