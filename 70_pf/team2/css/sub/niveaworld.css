@@ -20,9 +20,6 @@ section.s1 {
     transform: translate(-50%, -50%);
 }
 
-/* .text p {
-    display: none;
-} */
 .bg_circle {
     position: absolute;
     left: 50%;
@@ -41,26 +38,46 @@ section.s1 {
 
 /* 섹션2 */
 .s2 .ibx {
-    width: 1140px;
+    width: 60vh;
     margin: 0 auto;
 }
 
 .s2 .title {
     text-align: center;
-    margin: 94px 0 21px 0;
+    margin: 94px 0 61px 0;
 }
 
-.s2 .arrow {
-    /* 가로 가운데 배치: width+margin */
+/* 가로 가운데 배치: width+margin */
+/* .s2 .arrow {
     width: 23px;
     margin: 0 auto;
+} */
+
+.s2 .history_img {
+    position: relative;
+
+    width: 318px;
+    height: 210px;
 }
+.s2 .history_img img {
+
+
+}
+.s2 .history_img .img_txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* .s2 .history_box {
+    height: 494px;
+    padding: 40px 0 104px;
+    background: #222;
+} */
 
 /* 768이상: 테블릿 */
 @media (min-width: 768px) {
-    .text p {
-        display: inline-block;
-    }
+
 }
 
 /* 992이상: 데스크탑 */
