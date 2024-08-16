@@ -14,7 +14,7 @@ a { color: #1b1b1b;}
 /* 서브_니베아월드 */
 #sb_world .s1 h1 {font-size: 9.6rem; font-weight: 400;}
 @media (max-width:768px) {
-    #sb_world .s1 h1 {font-size: 6.2rem;}
+    #sb_world .s1 h1 {font-size: 6.4rem;}
 }
 
 #sb_world .s1 p {font-size: 2rem;}
