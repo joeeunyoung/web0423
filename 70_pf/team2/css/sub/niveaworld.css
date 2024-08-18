@@ -39,6 +39,7 @@ section.s1 {
 /* 섹션2 */
 .s2 .ibx {
     width: 60vw;
+
     margin: 0 auto;
 }
 
@@ -82,6 +83,6 @@ section.s1 {
 /* 992이상: 데스크탑 */
 @media (min-width: 992px) {
     .s1 .text {
-        width: 70vw;
+        width: 66vw;
     }
 }
