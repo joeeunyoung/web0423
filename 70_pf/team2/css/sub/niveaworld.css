@@ -38,7 +38,7 @@ section.s1 {
 
 /* 섹션2 */
 .s2 .ibx {
-    width: 60vh;
+    width: 60vw;
     margin: 0 auto;
 }
 
@@ -59,16 +59,17 @@ section.s1 {
     width: 318px;
     height: 210px;
 }
-.s2 .history_img img {
 
+.s2 .history_img img {}
 
-}
 .s2 .history_img .img_txt {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 180px;
 }
+
 /* .s2 .history_box {
     height: 494px;
     padding: 40px 0 104px;
@@ -76,11 +77,11 @@ section.s1 {
 } */
 
 /* 768이상: 테블릿 */
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 /* 992이상: 데스크탑 */
 @media (min-width: 992px) {
-
+    .s1 .text {
+        width: 70vw;
+    }
 }
