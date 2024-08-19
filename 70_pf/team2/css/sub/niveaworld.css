@@ -56,9 +56,9 @@ section.s1 {
 
 .s2 .history_img {
     position: relative;
-
     width: 318px;
     height: 210px;
+    margin: 0 auto;
 }
 
 .s2 .history_img img {}
@@ -69,6 +69,7 @@ section.s1 {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 180px;
+    text-align: center;
 }
 
 /* .s2 .history_box {
@@ -78,7 +79,13 @@ section.s1 {
 } */
 
 /* 768이상: 테블릿 */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .s2 .history_img {
+        width: 720px;
+        height: 434px;
+        margin: 0 auto;
+    }
+}
 
 /* 992이상: 데스크탑 */
 @media (min-width: 992px) {
