@@ -12,16 +12,19 @@ span { font-size: 2rem; font-weight: 600; }
 a { color: #1b1b1b;} 
 
 /* 서브_니베아월드 */
-#sb_world .s1 h1 {font-size: 9.6rem; font-weight: 400;}
-@media (max-width:768px) {
-    #sb_world .s1 h1 {font-size: 6.4rem;}
-}
+#sb_world .s1 h1 {font-size: 4.8rem; font-weight: 400;}
 
 #sb_world .s1 p {font-size: 2rem;}
 #sb_world .s2 h2 {font-size: 4rem; font-weight: 500; color:#222;}
 #sb_world .s2 .title p {font-size: 2.2rem; font-weight:500; color: #009EE3;}
 #sb_world .s2 .img_txt h2 {color: #fff;}
+
 #sb_world .s2 .img_txt a {
     color: #fff;
     text-decoration-line: underline;
+}
+
+@media (min-width: 768px) {
+    #sb_world .s1 h1 {font-size: 9.6rem;}
+    #sb_world .s2 .img_txt h2 {font-size: 8.8rem;}
 }

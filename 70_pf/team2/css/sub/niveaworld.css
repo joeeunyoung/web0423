@@ -61,15 +61,15 @@ section.s1 {
     margin: 0 auto;
 }
 
-.s2 .history_img img {}
 
 .s2 .history_img .img_txt {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 180px;
+    width: 400px;
     text-align: center;
+    border: 1px solid red;
 }
 
 /* .s2 .history_box {
@@ -85,11 +85,17 @@ section.s1 {
         height: 434px;
         margin: 0 auto;
     }
+
 }
 
 /* 992이상: 데스크탑 */
 @media (min-width: 992px) {
     .s1 .text {
         width: 66vw;
+    }
+    .s2 .history_img {
+        width: 567px;
+        height: 344px;
+        display: inline-block;
     }
 }
