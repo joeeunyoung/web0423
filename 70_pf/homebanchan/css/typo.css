@@ -30,3 +30,4 @@ a { color: #1b1b1b;}
 #s4 h3 { font-size: 48px; font-weight: 700; line-height: 1; text-transform: uppercase;} 
 #s4 p:first-of-type {font-size: 24px; font-weight: 300;line-height: 1.2;}
 #s4 a {font-size: 1.8em; font-weight: 300; color: #ffffff;}
+#s5 h3 {font-size: 1.8rem;font-weight: 700;}
