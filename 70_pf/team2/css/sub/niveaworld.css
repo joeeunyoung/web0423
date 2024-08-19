@@ -96,6 +96,6 @@ section.s1 {
     .s2 .history_img {
         width: 567px;
         height: 344px;
-        display: inline-block;
+        /* display: inline-block; */
     }
 }
