@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서울대학교병원::공지사항</title>
+    <title>서울대병원: 공지사항</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/notice.css">
 </head>
 
 <body>
@@ -13,13 +14,13 @@
     <header>
         <!-- 로고 -->
         <h1 class="logo">
-            <a href="#"><b>MB</b>MegaBox</a>
+            <a href="../index.html"><b>SULH</b>서울대병원</a>
         </h1>
         <!-- 내비게이션 -->
         <nav>
             <ul>
-                <li><a href="#sec2">영화</a></li>
-                <li><a href="#sec3">이벤트</a></li>
+                <li><a href="#sec2">특성화센터</a></li>
+                <li><a href="#sec3">의료진</a></li>
                 <li><a href="#sec4">고객센터</a></li>
                 <li><a href="notice.html">공지사항</a></li>
             </ul>
@@ -32,36 +33,43 @@
             <div class="bar3"></div>
         </div>
     </header>
-    <div>
-        <span>MEGA NEWS</span>
-        <h2>MEGA NOTICES</h2>
-        <!-- 브레드 크럼(Breadcrumb)이란 주로 페이지 상단 좌측에 자리하여 유저가 웹사이트 내에서 어디에 있는지 알려주는 네비게이션 텍스트 입니다 -->
-        <div>
-            <ul>
-                <li><a href="../index.html">홈</a></li>
-                <li><a href="notice.html">메가소식</a></li>
-                <li><a href="notice.html">공지사항</a></li>
-            </ul>
+
+    <!-- 탑 영역 -->
+    <div id="top">
+        <!-- #top을 flex적용하면 .inner을 수직 중앙 배치할 수 있다. -->
+        <div class="inner">
+            <span>서울대병원 NEWS</span>
+            <h2>서울대병원 NOTICES</h2>
+            <!-- 브레드 크럼(Breadcrumb)이란 주로 페이지 상단 좌측에 자리하여 유저가 웹사이트 내에서 어디에 있는지 알려주는 네비게이션 텍스트 입니다 -->
+            <div>
+                <a href="../index.html">홈</a>
+                <a href="notice.html">서울대병원소식</a>
+                <a href="notice.html">공지사항</a>
+            </div>
         </div>
     </div>
-    <seciton>
-        <h2>메가박스 공지사항</h2>
-        <p>메가박스 소식을 알려드립니다.</p>
+
+    <!-- 섹션 영역 -->
+    <section id="notice">
+        <h2>서울대병원 공지사항</h2>
+        <p>서울대병원 소식을 알려드립니다.</p>
 
         <!-- 검색 영역 -->
         <!-- *.jsp(자바 서버 페이지)는 백앤드 개발자 -->
         <form action="notice.jsp">
-            <select name="" id="">
-                <option value="">제목</option>
-                <option value="">내용</option>
-                <option value="">작성자</option>
-            </select>
-            <input type="search" placeholder="검색어를 입력하세요">
+            <div>
+                <select name="" id="">
+                    <option value="">제목</option>
+                    <option value="">내용</option>
+                    <option value="">작성자</option>
+                </select>
+                <input type="search" placeholder="검색어를 입력하세요">
+            </div>
             <input type="submit" value="검색">
         </form>
 
         <!-- 공지사항 게시판 -->
-        <table>
+        <table id="board">
             <tr>
                 <th>번호</th>
                 <th>제목</th>
@@ -70,41 +78,41 @@
                 <th>조회</th>
             </tr>
             <tr>
-                <td>3980</td>
-                <td>본관 1주차장 운영 중단 안내</td>
-                <td>서울대학교병원</td>
+                <td>공지</td>
+                <td><a href="#">본관 1주차장 운영 중단 안내</a></td>
+                <td>서울대병원</td>
                 <td>2024-07-12</td>
-                <td>9971</td>
+                <td>1703</td>
             </tr>
             <tr>
-                <td>3979</td>
-                <td>2024년 5월 20일부터 신분증 꼭 챙기세요</td>
-                <td>서울대학교병원</td>
-                <td>2024-05-13</td>
-                <td>17008</td>
+                <td>4</td>
+                <td><a href="#">2024년 5월 20일부터 신분증 꼭 챙기세요</a></td>
+                <td>서울대병원</td>
+                <td>2024-08-02</td>
+                <td>359</td>
             </tr>
             <tr>
-                <td>3978</td>
-                <td>서울대병원, 자문기반 완화의료 실현가능성 모색한다</td>
-                <td>서울대학교병원</td>
-                <td>2024-08-19</td>
-                <td>34</td>
-            </tr>
-            <tr>
-                <td>3977</td>
-                <td>서울대병원·서울의대, 신경발달장애 원인 유전자 HDAC3 변이 새롭게 규명</td>
-                <td>서울대학교병원</td>
+                <td>3</td>
+                <td><a href="#">서울대병원, 자문기반 완화의료 실현가능성 모색한다</a></td>
+                <td>서울대병원</td>
                 <td>2024-08-16</td>
-                <td>436</td>
+                <td>601</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="#">서울대병원, 조기 통합 완화의료로 진행암 환자 삶의 질 및 생존율 향상 입증</a></td>
+                <td>서울대병원</td>
+                <td>2024-08-12</td>
+                <td>1812</td>
             </tr>
         </table>
-        <div>
+        <div class="paging">
             <a href="#">처음</a>
             <a href="#">1</a>
             <a href="#">마지막</a>
         </div>
-    </seciton>
-
+    </section>
+    
     <!-- 푸터 -->
     <footer>
         <p>Copyright Hanatour. All rights reserved.</p>
