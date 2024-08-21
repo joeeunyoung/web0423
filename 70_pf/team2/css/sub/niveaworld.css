@@ -74,8 +74,9 @@ section.s1 {
 .s2 .history_txt {
     width: 318px;
     height: 180px;
+
     align-content: center;
-    margin: 0 auto;
+    margin: 48px 0;
 
     background: #f7f7f7;
 }
