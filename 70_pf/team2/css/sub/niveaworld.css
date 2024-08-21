@@ -76,8 +76,7 @@ section.s1 {
     height: 180px;
 
     align-content: center;
-    margin: 48px 0;
-
+    margin: 48px auto;
     background: #f7f7f7;
 }
 
