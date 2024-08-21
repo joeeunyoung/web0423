@@ -98,13 +98,14 @@ nav {
     right: -65%;
     width: 65%;
     height: 100vh;
-    background: red;
+    background: #02348B;
     transition: .3s ease-in-out;
 }
 
 nav.change {
     right: 0;
 }
+/*////////////////////////////////////*/
 
 /* 섹션 */
 #notice {
@@ -127,6 +128,7 @@ nav.change {
     flex: 0 0 69.5%;
     height: 40px;
     vertical-align: top;
+    border: 1px solid #ddd;
 }
 #notice [type="submit"] {
     display: block;
@@ -149,27 +151,29 @@ nav.change {
 }
 
 #board td {
-    padding: 12px 0;
+    padding: 16px 0;
     border-bottom: 1px solid #ddd;
 }
 #board td:nth-of-type(2) a {
     padding-right: 16px;
     display: block;
-    /* ...생략 효과(a태그 추가해서 넣음) */
+    /* ...생략 효과(적용시키기위해 a태그 추가) */
     width: 260px;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
 }
-#board th:nth-of-type(odd), #board td:nth-of-type(odd) {
-    display: none;
+#board td:nth-of-type(2) a:hover {
+    text-decoration: underline;
 }
 /* 
-    odd(홀수), 2n-1, 2n+1
-    even(짝수), 2n
- */
+odd(홀수), 2n-1, 2n+1
+even(짝수), 2n
+*/
+#board th:nth-of-type(odd), #board td:nth-of-type(2n-1) {
+    display: none;
+}
 
- 
 /*////////////////////////////////////*/
 
 
