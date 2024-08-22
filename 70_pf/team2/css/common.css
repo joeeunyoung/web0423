@@ -27,4 +27,6 @@ a { color: #1b1b1b;}
 @media (min-width: 768px) {
     #sb_world .s1 h1 {font-size: 9.6rem;}
     #sb_world .s2 .img_txt h2 {font-size: 8.8rem;}
+    #sb_world .s2 .history_txt h3 {font-size: 4.9rem;}
+    #sb_world .s2 .history_txt p {font-size: 3.8rem;}
 }
