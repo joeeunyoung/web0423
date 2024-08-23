@@ -1,0 +1,38 @@
+닷홈
+4도메인
+URL: https://www.dothome.co.kr/
+URL: https://www.dothome.co.kr/web/free/index.php
+3도메인
+
+프로토콜://서비스.회사.기관성격.국가/폴더/폴더/파일명.확장자
+
+도메인: 문자주소
+IP: 숫자 주소, 192.168.2.26 -> 16진수 -> 2진수
+
+홈페이지 -> (구글첫페이지) 메인페이지
+웹페이지 -> 홈, 메인, 서브
+웹사이트 제작
+서브페이지
+
+1차 가입: id = angel144000, pw = a!138070 - 비공개
+2차 신청 무료 호스팅 신청: id 공개: zoe, pw: web0422!
+도메인: id.dothome.co.kr
+예) stdw.dothome.co.kr, 
+
+https://totat21.dothome.co.kr
+https://ninkotek.dothome.co.kr
+https://zoe.dothome.co.kr
+https://zoe.dothome.co.kr
+https://zoe.dothome.co.kr
+https://zoe.dothome.co.kr
+https://zoe.dothome.co.kr
+https://zoe.dothome.co.kr
+https://zoe.dothome.co.kr
+무료 호스팅 (저장공간 + 무료 도메인)
+1. 6개월(184일 남음)
+2. 저장공간: 500M
+3. 트래픽(월): 15G -> 15000MB -> 30배
+
+닷홈 - 한글 파일명/파일명/폴더명 절대 한글쓰면 안됨
+
+웹호스팅 -> 무료호스팅
