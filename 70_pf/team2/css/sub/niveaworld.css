@@ -41,7 +41,6 @@ section.s1 {
 .s2 .ibx {
     width: 90vw;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .s2 .title {
@@ -84,9 +83,7 @@ section.s1 {
     text-align: center;
     margin-bottom: 11px;
 }
-.s2 .history_txt p {
-    /* margin-left: 5px; */
-}
+
 /* 768이상: 테블릿 */
 @media (min-width: 768px) {
 
@@ -102,7 +99,7 @@ section.s1 {
 }
 
 /* 992이상: 데스크탑 */
-@media (min-width: 992px) {
+@media (min-width: 1500px) {
     .s1 .text {
         width: 60vw;
     }
@@ -128,10 +125,18 @@ section.s1 {
         top: 50px;
         width: 100%;
         height: 354px;
-        padding: 0 724px 0 63px;
-        border: 1px solid red;
+        padding-left: 70px;
     }
     .s2 .history_txt h3 {
         text-align: left;
     }
+    .s2 .history_txt h3::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 1px;
+        background-color: #8f8f8f;
+        margin: 28px 0 34px;
+    }
+
 }

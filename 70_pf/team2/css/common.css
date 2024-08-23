@@ -33,7 +33,7 @@ a { color: #1b1b1b;}
 }
 
 /* 992이상: 데스크탑 */
-@media (min-width: 992px) {
+@media (min-width: 1500px) {
     #sb_world .s2 .img_txt h2 {font-size: 7rem;}
     #sb_world .s2 .history_txt h3 {font-size: 2.4rem;}
     #sb_world .s2 .history_txt p {font-size: 1.6rem;}
