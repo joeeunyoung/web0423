@@ -61,6 +61,7 @@ section.s1 {
     margin: 0 auto;
 }
 
+
 .s2 .history_img .img_txt {
     position: absolute;
     left: 50%;
@@ -138,4 +139,9 @@ section.s1 {
         background-color: #8f8f8f;
         margin: 28px 0 34px;
     }
-}
+    .s2 #hbox .history_img {
+        left: -370px;
+    }
+    .s2 #hbox  .history_txt {
+        padding: 0 70px 0 680px;
+    }
