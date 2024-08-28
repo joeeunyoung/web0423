@@ -42,7 +42,7 @@ section.s1 {
 
 }
 .s2 .login_wrap {
-    width: 335px;
+    width: 90vw;
     /* height: 340px; */
     text-align: center;
     background: #f0eeed;
@@ -50,7 +50,7 @@ section.s1 {
     margin: 0 auto;
 }
 .s2 .inner {
-    width: 320px;
+    width: 350px;
     margin: 0 auto;
 }
 .s2 .input_wrap {
@@ -87,9 +87,7 @@ section.s1 {
 }
 /* 768이상: 테블릿 */
 @media (min-width: 768px) {
-    .s2 .login_wrap {
-        width: 90vw;
-    }
+    
 }
 
 /* 992이상: 데스크탑 */
