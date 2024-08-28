@@ -72,6 +72,7 @@ section.s1 {
     margin-bottom: 30px;
     color: #fff;
     background: #0032A0;
+    font-size: 18px;
 }
 .s2 .btn_area ul {
     display: flex;
@@ -82,10 +83,13 @@ section.s1 {
     line-height: 1;
     border-left: 1px solid #ccc;
 }
+.s2 .btn_area li:first-child {
+    border-left: none
+}
 /* 768이상: 테블릿 */
 @media (min-width: 768px) {
     .s2 .login_wrap {
-        width: 80vw;
+        width: 90vw;
     }
 }
 
