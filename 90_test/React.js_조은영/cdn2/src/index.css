@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+h3 {
+    font-family: "Noto Sans KR", sans-serif;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: top;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.card_list {
+    width: 353px;
+    height: 640px;
+    margin: 16px;
+}
+
+.card_img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card_img::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 100%;
+    height: 100%; */
+    transition: background 0.7s;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card_img:hover::after {
+    content: "디저트39 이벤트 & 소식";
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+}
+
+.card_tit {
+    display: inline-block;
+    font-size: 24px;
+    padding: 24px 24px 0 24px;
+}
+.card_date {
+    font-size: 18px;
+}
+
