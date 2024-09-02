@@ -27,6 +27,12 @@
 .slick-slide .tit {
     padding: 8px 24px;
 }
+.slick-slide .tit h3 {
+    padding: 8px 0;
+}
+.slick-slide .tit p {
+    padding: 2px 0;
+}
 
 /* 이전(prev)/다음(next) 버튼 */
 .slick-prev,
