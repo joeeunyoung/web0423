@@ -7,10 +7,10 @@ function App(){
                     key={idx}
                     mimg={item.cimg} 
                     mtit={item.ctit} 
-                    // mage={item.cage} 
-                    // mrate={item.crate} 
+                    mage={item.cage} 
+                    mrate={item.crate} 
                     mdate={item.cdate} 
-                    // mheart={item.cheart} 
+                    mheart={item.cheart} 
                 />
             ))}
         </ul>
