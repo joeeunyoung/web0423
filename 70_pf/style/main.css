@@ -50,8 +50,9 @@ main {
 }
 
 section {
-    width: 940px;
+    /* width: 940px; */
     margin: 0 auto;
+    border:  1px solid red;
     /* 마진 오토는 위드가 반드시있어야함 */
 }
 
@@ -79,7 +80,8 @@ h2 {
 }
 
 .home-description {
-    width: 790px;
+    /* width: 790px; */
+    border:  1px solid blue;
 }
 
 h3 span {
