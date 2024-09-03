@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에반 개인 사이트 콘텐츠 레이아웃</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        .inner {
+            padding: 24px;
+        }
+
+        .home-card {
+            display: grid;
+            grid-template-columns: 100px auto;
+            column-gap: 24px;
+        }
+
+        .home-icon {
+            grid-row: 1/span 3;
+        }
+
+        @media (min-width:992px) {
+            .home-card {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="inner">
+        <div class="home-card">
+            <div class="home-icon">
+                <a href="allrecipes/index.html" target="_blank"><img src="../70_pf/allrecipes/assets/cooking1.svg" alt="allrecipes"></a>
+            </div>
+            <div class="home-title">
+                <h3>모든 레시피<span>(AllRecipes)</span></h3>
+            </div>
+            <div class="home-description">
+                <p>BR Architects를 리뉴얼해서 Carousel(캐로셀)은 바닐라 스크립트로 제작하였으며, 패럴렉스 스크롤링 기법, 구글지도 연동, To the top(탑 버튼) One Page Site, AWD(적응형 웹 디자인) 페이지 입니다.</p>
+            </div>
+            <div class="home-btn"><a href="#">Read more...</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
