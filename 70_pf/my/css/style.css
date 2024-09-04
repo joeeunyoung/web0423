@@ -131,7 +131,9 @@ iframe {
     text-align: center;
     padding: 32px;
 }
-
+.counter .col-sm {
+    padding: 20px 0;
+}
 .counter span {
     display: block;
     font-size: 2.4rem;
@@ -143,45 +145,39 @@ iframe {
     text-align: center;
 }
 
-#s3 .col {
-    padding: 8px;
+#s3 .col-sm {
+    margin-bottom: 12px;
 }
+
 #s4 .memo {
     width: 30px;
     height: 30px;
 } 
-@media (min-width: 992px) {
-    /* section4: contact */
-    #s4 li {
-        line-height: 2;
-    }
-    #s4 .row p {
-        margin: 24px 0 8px;
-    }
-
-    #s4 input {
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin: 4px 0;
-    }
-    #s4 button.btn {
-        margin-top: 16px;
-    }
-    #s4 [name="user_name"] {
-        margin-right: 1%;
-    }
-    #s4 [name*="user"] {
-        width: 49.2222222%;
-    }
-    #s4 [name="message"] {
-        width: 100%;
-    }
+/* section4: contact */
+#s4 input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 4px 0;
 }
+#s4 ul {
+    margin-top: 16px;
+}
+#s4 li {
+    line-height: 2;
+}
+#s4 .row p {
+    margin: 24px 0 8px;
+}
+#s4 button.btn {
+    margin-top: 16px;
+}
+
 
 
 /* footer */
 footer {
-    padding: 60px 0;
+    padding: 30px 0;
     background: #000;
     text-align: center;
     color: #fff;
@@ -192,4 +188,32 @@ footer a {
 footer .sns {
     margin: 16px 0;
     font-size: 2.4rem;
+}
+@media (min-width: 992px) {
+        /* clock */
+        #clock {
+            left: auto;
+            right: -2%;
+            bottom: 2%;
+            text-align: right;
+        }
+    .skill {
+        margin-top: 48px;
+    }
+    /* section4: contact */
+    #s4 form div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #s4 [name*="user"] {
+        width: 49.5%;
+    }
+    #s4 [name="message"] {
+        width: 100%;
+    }
+
+    footer {
+        padding: 60px 0;
+    }
 }
