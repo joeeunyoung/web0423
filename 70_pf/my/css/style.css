@@ -52,15 +52,15 @@ p {
 
 #s1 .container-fluid {
     height: 100vh;
-    background-image: url(../assets/parallax1.jpg);
+    background-image: url(../assets/my1.jpg);
 }
 #s3 .container-fluid {
     height: 400px;
-    background-image: url(../assets/parallax2.jpg);
+    background-image: url(../assets/my2.jpg);
 }
 #s4 .container-fluid {
     height: 400px;
-    background-image: url(../assets/parallax3.jpg);
+    background-image: url(../assets/my4.jpg);
 }
 
 
@@ -94,7 +94,10 @@ p {
 #s3 .col {
     padding:8px;
 }
-
+#s4 .memo {
+    width: 40px;
+    height: 40px;
+}
 /* footer */
 footer {
     padding: 60px 0;
