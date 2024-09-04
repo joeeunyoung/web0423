@@ -45,8 +45,9 @@ p {
     padding: 8px 24px;
     margin-top: 60px;
 }
-
+/* 배경이미지 패럴렉스 스크롤링 */
 .container-fluid {
+    text-align: center;
     background: no-repeat 50% 50%/cover fixed;
 }
 
@@ -62,7 +63,12 @@ p {
     height: 400px;
     background-image: url(../assets/my4.jpg);
 }
-
+.container-fluid>span {
+    font-size: 3.6rem;
+    line-height: 400px;
+    color: #fff;
+    letter-spacing: 10;
+}
 
 /* progress */
 .progress {
