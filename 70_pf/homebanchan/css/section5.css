@@ -71,7 +71,11 @@
     transform: rotate(180deg);
 }
 
-
+.slider p:last-child {
+    font-weight: bold;
+    color: #B41C11;
+    padding: 15px 0;
+}
 @media (min-width: 768px) {
     .slider {
         max-width: 620px;
