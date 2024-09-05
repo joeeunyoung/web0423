@@ -8,9 +8,13 @@
     <link rel="icon" type="image/x-icon" href="assets/plant.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/script.js"></script>
 
 </head>
 </head>
@@ -19,27 +23,27 @@
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <!-- Logo -->
         <a class="navbar-brand" href="#s1">J.E.Y</a>
-      
+
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#s2">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#s3">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#s4">CONTACT</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#s2">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s3">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s4">CONTACT</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
     <div id="s1">
         <div class="container-fluid">
             <div id="clock">
@@ -65,7 +69,7 @@
             <!-- 프로필1: 보편적 -->
             <div class="row">
                 <div class="col">
-                    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby
+                    <p class="profile1">We have created a fictional "personal" website/blog, and our fictional character is a hobby
                         photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -82,10 +86,10 @@
                 <div class="col-md">
                     <div class="text-center mb-5"><i class="fa-solid fa-venus"></i> joe eunyoung</div>
                     <!-- <div><img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="내 사진"></div> -->
-                    <div><img src="assets/my.jpg" alt="내 사진"></div>
+                    <div class="photo"><img src="assets/my.jpg" alt="내 사진"></div>
                 </div>
                 <div class="col-md mt-5">
-                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="profile2">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -131,20 +135,20 @@
         <div class="container-fluid counter">
             <div class="row">
                 <div class="col-sm">
-                    <span>2+</span>Team Projects
+                    <span><b>2</b>+</span>Team Projects
                 </div>
                 <div class="col-sm">
-                    <span>3+</span>Personal Projects
+                    <span><b>3</b>+</span>Personal Projects
                 </div>
                 <div class="col-sm">
-                    <span>5+</span>Total Projects
+                    <span><b>5</b>+</span>Total Projects
                 </div>
                 <div class="col-sm">
-                    <span>2+</span>National technical certification
+                    <span><b>2</b>+</span>National technical certification
                 </div>
             </div>
-        </div>
-    </div><!-- #s2 -->
+        </div><!-- .counter -->
+    </div><!-- s2 -->
 
     <!-- portfolio -->
     <div id="s3">
@@ -154,9 +158,13 @@
         <div class="container">
             <h2>MY WORK</h2>
             <p class="mb-5">다음은 내 최신 작업 중 일부입니다.<br>이미지를 더 크게 보려면 클릭해보세요.</p>
+            <!-- https://lokeshdhakar.com/projects/lightbox2/ -->
             <div class="row">
                 <div class="col-sm">
-                    <img src="../assets/thumb3.svg" alt="작품1">
+                    <!-- <a href="큰이미지" data-lightbox="roadtrip">-->
+                        <a href="../assets/127.0.0.1_5503_70_pf_index.html.png" data-lightbox="roadtrip" data-title="http://zoe.dothome.co.kr">
+                            <img src="../assets/thumb3.svg" alt="작품1">
+                        </a>
                 </div>
                 <div class="col-sm">
                     <img src="../snuh_v2/assets/thumb1.svg" alt="작품2">
@@ -168,7 +176,7 @@
                     <img src="../homebanchan/assets/thumb.svg" alt="작품4">
                 </div>
             </div>
-            <div class="row">
+            <div class="row pf2row">
                 <div class="col-sm">
                     <img src="../team2/assets/niveaworld/thumb.svg" alt="작품5">
                 </div>
@@ -179,11 +187,11 @@
                     <img src="../homebanchan/assets/thumb1.svg" alt="작품7">
                 </div>
                 <div class="col-sm">
-                    <img src="../allrecipes/assets/thumb.png" alt="작품8">
+                    <img src="../team2/assets/login/thumb.svg" alt="작품8">
                 </div>
-            </div><!-- .row -->
+            </div>
 
-            <a href="#" class="btn btn-dark">더보기</a>
+            <a href="#" class="btn btn-dark more">더보기</a>
         </div><!-- .container -->
     </div><!-- #s3 -->
 
@@ -200,8 +208,7 @@
                 <div class="col-sm col-md-4">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.672085941141!2d127.1074390763351!3d37.350271236498884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351691378!5m2!1sko!2skr"
-                        allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-sm col-md-8">
                     <div class="row">
@@ -213,7 +220,8 @@
                             </ul>
                         </div>
                     </div>
-                    <p>들러서 커피 한잔<i class="fa-solid fa-mug-saucer"></i> 하시거나 메모를<img class="memo" src="assets/icons.gif" alt="메모"> 남겨주세요.</p>
+                    <p>들러서 커피 한잔<i class="fa-solid fa-mug-saucer"></i> 하시거나 메모를<img class="memo" src="assets/icons.gif"
+                            alt="메모"> 남겨주세요.</p>
                     <div class="row">
                         <div class="col">
                             <form action="message.jsp" class="text-right">
