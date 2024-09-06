@@ -87,7 +87,22 @@
                 <div class="col-md">
                     <div class="text-center mb-5"><i class="fa-solid fa-venus"></i> joe eunyoung</div>
                     <!-- <div><img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="내 사진"></div> -->
-                    <div class="photo"><img src="assets/my.jpg" alt="내 사진"></div>
+                    <div class="photo vid">
+                        <!-- <img src="assets/my.jpg" alt="내 사진"> -->
+                        <!-- 
+                            autoplay + muted(무음): 자동 실행 
+                            loop: 무한 반복
+                        -->
+                         <!-- <video src="assets/mov_bbb.mp4" autoplay muted loop></video> -->
+                        <video>
+                            <source src="assets/186115-877653483_tiny.mp4" type="video/mp4">
+                            <source src="assets/186115-877653483_tiny.mp4" type="video/webm">
+                            <p>당신의 브라우저는 비디오 태그를 지원하지 않습니다.</p>
+                        </video>
+                        <!-- 비디오 플레이/일시정지 -->
+                        <i class="fa-regular fa-circle-play"></i>
+                        <!-- <i class="fa-regular fa-circle-pause"></i> -->
+                    </div>
                 </div>
                 <div class="col-md mt-5">
                     <p class="profile2">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do
@@ -278,7 +293,7 @@
                                     
                                 -->
                                 <li><i class="fa-solid fa-envelope"></i> <a href="mailto:angel138070@gmail.com">Email:angel138070@gmail.com</a></li>
-                                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:angel144000@naver.com">Email: angel144000@naver.com</a></li>
+                                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:https://mail.naver.com/write/popup?srvid=note&to=id@naver.com">Email: angel144000@naver.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -313,6 +328,9 @@
         </div>
         <p>&copy; 2024 H.G.D. All rights reserved.</p>
     </footer>
-</body>
 
+    <audio src="assets/snd.mp3" class="snd"></audio>
+    <audio src="assets/bgm.mp3" class="snd" autoplay loop></audio>
+
+</body>
 </html>
