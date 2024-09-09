@@ -92,7 +92,7 @@ iframe {
 #s1 .container-fluid {
     height: 100vh;
     background-image: url(../assets/my1.jpg);
-    filter: contrast(200%);
+    /* filter: contrast(200%); */
 }
 
 #s3 .container-fluid {
