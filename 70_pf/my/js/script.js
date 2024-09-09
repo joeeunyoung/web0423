@@ -58,7 +58,7 @@ $(() => {
         if (st >= 350) {
             profile1.css({ transform: "translateY(0)" });
         } else {
-            profile1.css({ transform: "translateY(300px)" });
+            profile1.css({ transform: "translateY(200px)" });
         }
 
         if (st >= 500) {
@@ -152,7 +152,7 @@ $(() => {
 
     setInterval(firefly, 3000);
 
-    function firefly(){
+    function firefly() {
         mm(0);
         mm(1);
     }
@@ -186,26 +186,26 @@ $(() => {
 
         // 1 <= Math.floor(Math.random() * 10) + 1 < 11
         // 50 <= Math.floor(Math.random() * 1800) + 50 < 1920
-        
+
         let x = Math.floor(Math.random() * 1800) + 50 - mp.eq(i).outerWidth() / 2;
         let y = Math.floor(Math.random() * 800) + 50 - mp.eq(i).outerWidth() / 2;
         // let x = event.pageX - mp.eq(i).outerWidth() / 2;
         // let y = event.pageY - mp.eq(i).outerWidth() / 2;
 
-        mp.eq(i).css({left: x + "px", top: y + "px"});
+        mp.eq(i).css({ left: x + "px", top: y + "px" });
     }
 
-    // 푸터 배경색 랜덤하게 바꾸기
+    // 버튼 배경색 랜덤하게 바꾸기
     const btnEle = $(".btn");
     const colors = ["#cf38b6", "#ff4393", "#ff6c71"];
-   
+
     setInterval(bgcolor, 5000);
-    
-    function bgcolor(){
+
+    function bgcolor() {
         let color = colors[Math.floor(Math.random() * 3)];
         btnEle.css({
-            backgroundColor: color, 
-            transition: "2s", 
+            backgroundColor: color,
+            transition: "2s",
             border: "none"
         });
     }
